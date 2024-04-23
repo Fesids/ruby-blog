@@ -1,0 +1,13 @@
+<%= form_for([@post, @post.comments.build]) do |f| %>
+     <%= f.check_box :anonimous , {:class => "select"} %>
+        <%= f.label :anonimous, "Anônimo (apenas selecione este campo caso queira criar um comentário anônimo)" , class:"" %>
+  <!--%= select_tag(:anonimous, options_for_select([["Não Anônimo",false], ["Anônimo", true]], params[:anonimous] ), class:"select")  %-->
+  <br>
+  <%= f.label :nome %><br>
+  <%= f.text_field :name, {:class => 'name-comment-form'} %><br> 
+  <br>
+  <%= f.label :conteudo %><br>
+  <%= f.text_area :body %><br>
+  <br>
+  <%= f.submit "Criar Comentário", class:"btn btn-success" %>
+<% end %>

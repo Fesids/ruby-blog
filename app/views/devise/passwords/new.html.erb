@@ -1,0 +1,19 @@
+<h1>Esqueceu sua senha?</h1>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Mande para este email as instruções para resetar a minha senha", class:"btn btn-success my-3" %>
+  </div>
+
+  <%= link_to "Entrar", new_user_session_path,  class:"text-primary text-decoration-none font-weight-bold"  %> |
+  <%= link_to "Cadastrar", new_user_registration_path,  class:"text-primary text-decoration-none font-weight-bold"  %>
+<% end %>
+
+

@@ -1,0 +1,18 @@
+current directory: C:/Users/pc/Downloads/rails/blog/vendor/bundle/ruby/3.2.0/gems/nio4r-2.7.1/ext/nio4r
+C:/Ruby32-x64/bin/ruby.exe extconf.rb
+
+current directory: C:/Users/pc/Downloads/rails/blog/vendor/bundle/ruby/3.2.0/gems/nio4r-2.7.1/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240416-8800-e6q3lj sitelibdir\=./.gem.20240416-8800-e6q3lj clean
+make: *** Sem regra para processar o alvo 'clean' .  Pare.
+
+current directory: C:/Users/pc/Downloads/rails/blog/vendor/bundle/ruby/3.2.0/gems/nio4r-2.7.1/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240416-8800-e6q3lj sitelibdir\=./.gem.20240416-8800-e6q3lj
+make: Nada a ser feito para 'all'. 
+
+current directory: C:/Users/pc/Downloads/rails/blog/vendor/bundle/ruby/3.2.0/gems/nio4r-2.7.1/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240416-8800-e6q3lj sitelibdir\=./.gem.20240416-8800-e6q3lj install
+make: Nada a ser feito para 'install'. 
+
+current directory: C:/Users/pc/Downloads/rails/blog/vendor/bundle/ruby/3.2.0/gems/nio4r-2.7.1/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240416-8800-e6q3lj sitelibdir\=./.gem.20240416-8800-e6q3lj clean
+make: *** Sem regra para processar o alvo 'clean' .  Pare.

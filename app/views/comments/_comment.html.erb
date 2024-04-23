@@ -1,0 +1,20 @@
+<div class="comment clearfix">
+  <div class="comment_content">
+    <% if comment.anonimous %>
+        <p class="comment_name"><strong>Comentário Anônimo</strong></p>
+    <% else %>
+      <p class="comment_name"><strong><%= comment.name %></strong></p>
+    <% end %>
+  
+    <p class="comment_body"><%= comment.body %></p>
+    <p class="comment_time">
+      <%= time_ago_in_words(comment.created_at) %> Atrás</p>
+      <!--p class="comment_body"><%= comment.post.user %></!--p-->
+  </div>
+  <% if comment.post.user == current_user %>
+			<p><%= link_to 'Deletar', [comment.post, comment],
+											method: :delete,
+											class: "text-danger text-decoration-none",
+											data: { confirm: 'Are you sure?' } %></p>
+ 		<% end %>
+</div>
